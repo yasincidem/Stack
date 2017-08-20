@@ -32,7 +32,7 @@ public class BalancedSymbols {
         return p.isEmpty();
     }
     
-    ///////////3333333333333333/////////////////////////
+    ///////////3333333333333333////////////////////////
     boolean isValid(String s) {
         Stack<Character> stack = new Stack<Character>();
         // Iterate through string until empty
