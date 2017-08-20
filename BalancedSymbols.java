@@ -4,7 +4,7 @@ import java.util.Stack;
  * Created by yasin_000 on 21.8.2017.
  */
 public class BalancedSymbols {
-    boolean isBalanced2(String string){
+    boolean isBalanced(String string){
         Stack<String> stack = new Stack<>();
         boolean balanced = true;
         int index = 0;
