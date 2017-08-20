@@ -4,6 +4,11 @@ import java.util.Stack;
  * Created by yasin_000 on 21.8.2017.
  */
 public class BalancedSymbols {
+     //////////////////////////////////////////////
+     ////https://www.hackerrank.com/challenges/balanced-brackets
+     ////https://interactivepython.org/runestone/static/pythonds/BasicDS/BalancedSymbols(AGeneralCase).html
+     ////https://leetcode.com/problems/valid-parentheses/discuss/
+     ////
      /////////11111111111//////////////////////
     boolean isValid(String s){
         Stack<Character> stack = new Stack<Character>();
@@ -55,7 +60,7 @@ public class BalancedSymbols {
     }
     
     ////////44444444444444////////////////////////////////
-    boolean isBalanced(String string){
+    boolean isValid(String string){
         Stack<String> stack = new Stack<>();
         boolean balanced = true;
         int index = 0;
