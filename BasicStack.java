@@ -5,14 +5,16 @@ public class BasicStack<T> {
     private T [] data;
     private int stackPointer;
 
-    public BasicStack(){
-        data = (T[]) new Object[1000];
+    public BasicStack(int capacity){
+        data = (T[]) new Object[capacity];
         stackPointer = 0;
     }
 
     public void push(T newItem){
         if (stackPointer == 0)
             throw new IllegalStateException("No more Stack item");
+        // if (size() == data.length)
+        //   throw new IllegalStateException("No more Stack item");
         data[stackPointer++] = newItem;
     }
 
