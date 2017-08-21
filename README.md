@@ -11,6 +11,9 @@
 * Map coloring
 * Many more examples
 
+## Videos
+[freeCodeCamp-Stacks ](https://www.youtube.com/watch?v=Gj5qBheGOEo)
+
 ## Representations
 Wrapper around a built-in list object
 Array-based, bounded or expandable (All operations in Θ(1) except search and access)
