@@ -15,4 +15,17 @@ public class DecimalToBinary {
             binString += Integer.toString(stack.pop());
         return binString;
     }
+    String baseConverter(int decNumber,int base){
+        StackLinkedList<Integer> stack = new StackLinkedList<>();
+        char [] digits = "0123456789ABCDEF".toCharArray();
+        while (decNumber > 0){
+            int rem = decNumber % base;
+            stack.push(rem);
+            decNumber = decNumber/base;
+        }
+        String binString = "";
+        while (!stack.isEmpty())
+            binString += digits[stack.pop()];
+        return binString;
+    }
 }
