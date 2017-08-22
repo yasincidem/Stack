@@ -34,15 +34,6 @@ public class BasicStack<T> {
         return found;
     }
 
-    public T access(T item){
-        while (stackPointer > 0){
-            T tmpItem = pop();
-            if (item.equals(tmpItem))
-                return tmpItem;
-        }
-        throw new IllegalArgumentException("Could not find item");
-    }
-
     public int size(){
         return stackPointer;
     }
